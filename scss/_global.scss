@@ -1,6 +1,17 @@
 * {
   font-family: "Gilroy", sans-serif;
 }
+html,
+body{
+  height: 100%;
+}
+body{
+  display: flex;
+  flex-direction: column;
+}
+.main{
+  flex-grow: 1;
+}
 .container {
   //max-width: 1110px;
   max-width: 1180px;
@@ -23,4 +34,10 @@
   line-height: 140%;
   text-align: center;
   color: #333;
+}
+.header-page{
+  background: #333;
+  .header-nav{
+    padding: 27px 0 31px;
+  }
 }
