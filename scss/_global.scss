@@ -2,14 +2,14 @@
   font-family: "Gilroy", sans-serif;
 }
 html,
-body{
+body {
   height: 100%;
 }
-body{
+body {
   display: flex;
   flex-direction: column;
 }
-.main{
+.main {
   flex-grow: 1;
 }
 .container {
@@ -35,9 +35,48 @@ body{
   text-align: center;
   color: #333;
 }
-.header-page{
+.header-page {
   background: #333;
-  .header-nav{
+  .header-nav {
     padding: 27px 0 31px;
+  }
+}
+.breadcrumbs {
+  //background: yellowgreen;
+  padding: 60px 0 27px;
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__item + .breadcrumbs__item {
+    margin-left: 39px;
+  }
+  &__item {
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "/";
+      @extend %gilroy-400;
+      font-size: 16px;
+      line-height: 150%;
+      color: #333;
+      right: -23px;
+    }
+    &:last-child{
+      &::after{
+        content: none;
+      }
+    }
+  }
+  &__link {
+    @extend %gilroy-400;
+    font-size: 14px;
+    line-height: 150%;
+    text-decoration-line: underline;
+    color: #333;
+  }
+  &__link--active {
+    text-decoration: none;
   }
 }
