@@ -102,3 +102,84 @@
     row-gap: 30px;
   }
 }
+@media (max-width: 375px) {
+  .header {
+    &__title {
+      font-size: 36px;
+      line-height: 49px;
+    }
+    &__btn {
+      margin: 50px auto 119px;
+    }
+  }
+  //.header-inner {
+  //  height: 100vh;
+  //}
+  .header-brands {
+    display: none;
+  }
+  .subtitle {
+    font-size: 18px;
+  }
+  .title {
+    font-size: 24px;
+    line-height: 33px;
+  }
+  .second-screen {
+    padding: 80px 0;
+    &__list-link {
+      width: 285px;
+      &:after {
+        width: 285px;
+      }
+    }
+    &__category-item {
+      width: 300px;
+    }
+    &__category-images {
+      width: 300px;
+    }
+  }
+  .our-salon {
+    &__text {
+      font-size: 17px;
+      margin: 0 auto 50px;
+    }
+  }
+  .blog {
+    &__item {
+      width: 300px;
+    }
+    &__item-images {
+      width: 300px;
+    }
+    &__item-text {
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .gallery {
+    &__inner {
+      margin-left: -35px;
+      margin-right: -35px;
+    }
+  }
+  .subscribe {
+    padding: 60px 0;
+    &__inner {
+      flex-direction: column;
+      row-gap: 20px;
+    }
+    &__label{
+      flex-direction: column;
+    }
+    &__input{
+      margin: 0 auto 15px;
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+  .footer-bottom{
+    flex-wrap: wrap;
+  }
+}
